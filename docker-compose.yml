@@ -1,0 +1,28 @@
+version: '3'
+services:
+  nginx:
+    restart: always
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./nginx
+    ports:
+      - '3030:80'
+    depends_on:
+      - client
+      - api      
+  client:
+    build: 
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - /usr/src/app/node_modules
+      - ./client:/usr/src/app
+    depends_on:
+      - api
+  api:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
+    volumes:
+      - /usr/src/app/node_modules
+      - ./server:/usr/src/app
