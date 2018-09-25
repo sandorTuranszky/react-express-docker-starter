@@ -39,5 +39,38 @@ I am always open to [your feedback](https://github.com/.../issues)
 
 ## Get started
 
+- [Set up environment variables](#env-vars)
 - [Set up MongoDB Atlas](#updating-to-new-releases)
 - [Set up RedisLabs](#sending-feedback)
+
+## Set up environment variables
+Create `config` directory under `server` and add to files there:
+
+```
+server/config/default.js
+server/config/production.js
+```
+
+```
+// default.js
+
+module.exports = {
+    db: {
+        mongoose: {
+            port: 3000, //or any you prefer
+            user: 'your mongodb user',
+            password: 'your mongodb password',
+            dbName: 'your db name'
+        },
+        redis: {
+            url: 'redisLabs url',
+            retryStrategy: 1000
+        }
+    }
+};
+
+// production.js has the same structure but different credential, of course.
+
+```
+
+More details on how config works see [node-config](https://github.com/lorenwest/node-config)
