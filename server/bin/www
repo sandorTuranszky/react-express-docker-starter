@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
     index++;
     redisClient.set('index', index)
     redisClient.hset('values', index, 'Nothing yet!');
-    res.send(`Hello World! Test node reload ${JSON.stringify(index)}`);
+    res.send(`Hello World! Test restart ${JSON.stringify(index)} from ip ${req.ip}`);
 })
 
 app.get('/value', (req, res) => {
