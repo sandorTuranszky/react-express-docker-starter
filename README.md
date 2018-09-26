@@ -27,14 +27,17 @@ I am always open to <a href="https://github.com/sandorTuranszky/react-express-do
 * Follows best practices from <a href="https://github.com/i0natan/nodebestpractices" target="_blank">The largest Node.JS best practices list</a>
 * Server powered by Express.js
 * SPA with rich features including PWA coming out of the box with <a href="https://github.com/facebookincubator/create-react-app" target="_blank">Create React App</a>
+* <a href="https://helmetjs.github.io/" target="_blank">Helmet</a> helps you secure your Express apps by setting various HTTP headers. Default setup is used. More on that <a href="https://helmetjs.github.io/" target="_blank">here</a> 
 * Logging with <a href="https://github.com/expressjs/morgan" target="_blank">Morgan</a>
 * Uses mongoose <a href="https://mongoosejs.com/" target="_blank">Mongoose</a> and <a href="https://www.mongodb.com/cloud/atlas" target="_blank">MongoDB Atlas</a>
 * TODO: Built with GraphQL query language
 * TODO: Transactional emails are sent with <a href="https://github.com/Automattic/kue" target="_blank">Kue</a> backed by <a href="https://redislabs.com/" target="_blank">RedisLabs</a>
 * TODO: Google and LinkedIn authentication with <a href="http://www.passportjs.org/" target="_blank">Passport</a>
 * TODO: CI with travisCI or CircleCI
-* TODO: <a href="https://helmetjs.github.io/" target="_blank">Helmet</a> to improve security
 * TODO: Sentry
+
+## Plans
+* Log visualization with <a href="https://prometheus.io/" target="_blank">Prometheus</a>
 
 ## Get started
 
