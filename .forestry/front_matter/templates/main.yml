@@ -1,4 +1,17 @@
 ---
 label: Main
 hide_body: false
-fields: []
+fields:
+- name: test
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Test
+  description: IDK
